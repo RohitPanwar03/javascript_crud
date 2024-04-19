@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Student Registration System</header>
+    <section>
+
+        <!-- REGISTRATION FORM -->
+
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+            <!-- NAME SECTION -->
+            <section>
+                <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
+                    field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </section>
+
+            <!-- STUDENT ID SECTION -->
+            <section>
+                <label>Student Id*</label><label class="validation-error hide" id="studentidValidationError">This
+                    field is required.</label>
+                <input type="number" name="studentid" id="studentid">
+            </section>
+
+            <!-- STUDENT EMAIL SECTION -->
+            <section>
+                <label>Email*</label><label class="validation-error hide" id="emailValidationError">This
+                    field is required.</label>
+                <input type="email" name="email" id="email">
+            </section>
+
+            <!-- STUDENT CONTACT SECTION -->
+            <section>
+                <label>Contact*</label><label class="validation-error hide" id="contactValidationError">This
+                    field is required.</label>
+                <input type="number" name="contact" id="contact">
+            </section>
+
+            <!-- FORM SUBMIT BUTTON -->
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+
+        <!-- STUDENT RECORDS TABLE -->
+
+        <table class="list" id="employeeList">
+
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Student Id</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

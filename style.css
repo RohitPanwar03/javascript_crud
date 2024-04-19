@@ -1,0 +1,136 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* MAIN HEADING */
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #1E90FF;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+section {
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* REGISTRATION FORM */
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3px;
+    background-color: #dddddd;
+}
+
+/* FORM INPUTS */
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* FORM SUBMIT BUTTON */
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #1E90FF;
+    border-radius: 6px;
+    padding: 14px 50px;
+    background-color: #fff;
+    color: #1E90FF;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #1E90FF;
+    color: #fff;
+}
+
+/* STUDENT RECORDS TABLE */
+
+.list {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.list tbody tr {
+    height: 20px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px;
+}
+
+
+.list thead {
+    background-color: #dddddd;
+}
+
+/* EDIT AND DELETE BUTTON */
+
+a {
+    margin: 20px auto;
+    max-width: 100px;
+    border: 1px solid #1E90FF;
+    padding: 3px 20px;
+    border-radius: 6px;
+    color: #1E90FF;
+    text-decoration: none;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+
+a:hover {
+    background: #1E90FF;
+    color: #fff;
+}
+
+/* INPUT FIELDS VALIDATION MESSAGE */
+
+.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:1270px) {
+
+
+    a {
+        display: block;
+    }
+
+}
